@@ -1,6 +1,5 @@
 from flask import Blueprint,jsonify
 from flask_jwt import jwt_required, current_identity
-from .. import common
 
 api=Blueprint('api',__name__)
 
