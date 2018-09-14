@@ -12,7 +12,6 @@ def before_request():
 def page_not_found(e):
     """重新定义了404错误的返回
     """
-    print(dir(e))
     return jsonify({'status_code':e.code,'error':e.name,'description':e.description}),404
 
 from . import demo
